@@ -1,52 +1,22 @@
-/* Target all anchor tags and change text color to red */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+  margin-left: 10px;
+}
+
 a {
-  color: red;
-}
-
-/* Target only the first h2 tag and change text and background color */
-h2:first-of-type {
-  color: white;
-  background-color: blue;
-}
-
-/* Select the first p tag and change text color to red */
-p:first-of-type {
-  color: red;
-}
-
-
-/* Target the anchor tag with attribute "href" and change color to red and remove the text underline */
-/* Target anchor tags with href attribute */
-a[href] {
-  color: red;
   text-decoration: none;
 }
 
-/* Target anchor tags with class="active" */
-a[class="active"] {
-  color: blue; /* Choose your desired color */
-  text-decoration: underline;
-}
-
-/* Target anchor tags with target="_self" */
-a[target="_self"] {
-  background-color: lightgray; /* Choose your desired background color */
-}
 
 
 
-/* Target the last <p> tag and add "..." after its value */
-p:last-of-type::after {
-  content: "...";
-}
-
-/* Target the list of bullet points and change the color of the bullet points */
-ul li::before {
-  color: green; /* Choose your desired color */
-}
-
-/* Target the second <p> tag, select the first letter, and change the color and font size */
-p:nth-of-type(2)::first-letter {
-  color: red;
-  font-size: 30px;
-}
